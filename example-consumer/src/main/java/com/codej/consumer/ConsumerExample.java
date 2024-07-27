@@ -5,7 +5,7 @@ import com.codej.common.service.UserService;
 
 public class ConsumerExample {
     public static void main(String[] args) {
-        UserService userService = null;
+        UserService userService = new UserServiceProxy();
         User user = new User();
         user.setName("rose");
         User newUser = userService.getUser(user);
